@@ -11,7 +11,7 @@ const Header: React.FC = () => {
                     <span className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Kryptium Finance</span>
                 </div>
                 <nav className="hidden md:flex flex-grow justify-center">
-                    <ul className="flex items-center space-x-6">
+                    <ul className="flex items-center space-x-16">
                         <li className="text-gray-800 dark:text-gray-200 font-semibold">Dashboard</li>
                         <li className="text-gray-800 dark:text-gray-200 font-semibold">My NFTs</li>
                         <li className="text-gray-800 dark:text-gray-200 font-semibold">Docs</li>
