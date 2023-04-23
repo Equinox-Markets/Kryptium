@@ -10,7 +10,7 @@ const Header: React.FC = () => {
                     <img src="/images/logo.png" alt="Kryptium Logo" className="inline-block mx-auto mr-2" />
                 </div>
                 <nav className="hidden md:flex flex-grow justify-center">
-                    <ul className="flex items-center space-x-16">
+                    <ul className="flex items-center">
                         <li className="text-gray-800 dark:text-gray-200 font-semibold">Dashboard</li>
                         <li className="text-gray-800 dark:text-gray-200 font-semibold">My NFTs</li>
                         <li className="text-gray-800 dark:text-gray-200 font-semibold">Docs</li>
