@@ -19,7 +19,6 @@ const Home: FC = () => {
                 </div>
             </div>
             <Footer />
-            <ThemeSwitcher className="absolute top-6 right-6" />
         </div>
     );
 };
