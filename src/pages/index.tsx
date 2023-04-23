@@ -8,7 +8,7 @@ import ThemeSwitcher from '@/components/ThemeSwitcher';
 
 const Home: FC = () => {
     return (
-        <ThemeSwticher>
+        <ThemeSwitcher>
             <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900">
                 <Header />
                 <div className="flex-grow">
