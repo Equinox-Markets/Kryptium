@@ -11,7 +11,7 @@ const Header: React.FC = () => {
                     <span className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Kryptium</span>
                 </div>
                 <nav className="hidden md:flex">
-                    <ul className="flex items-center space-x-4">
+                    <ul className="flex items-center space-x-8">
                         <li className="text-gray-800 dark:text-gray-200 font-semibold">Dashboard</li>
                         <li className="text-gray-800 dark:text-gray-200 font-semibold">My NFTs</li>
                     </ul>
@@ -26,5 +26,7 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
+
 
 
