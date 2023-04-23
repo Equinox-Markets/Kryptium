@@ -21,11 +21,11 @@ const Header: React.FC = () => {
                                 My NFTs
                             </a>
                         </li>
-                    <li>
-                        <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400">
+                        <li>
+                            <a href="https://telegram.org" className="text-gray-800 dark:text-gray-200 font-semibold">
                             Docs
-                        </a>
-                    </li>
+                            </a>
+                        </li>
                  </ul>
                 </nav>
                 <div className="flex items-center space-x-4 absolute top-4 right-4">
