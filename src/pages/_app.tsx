@@ -1,15 +1,13 @@
-import 'tailwindcss/tailwind.css'
-import { ThemeProvider } from 'next-themes'
-import Web3Provider from '@/components/Web3Provider'
+import { ThemeProvider } from 'next-themes';
+import '../styles/globals.css';
 
-const App = ({ Component, pageProps }) => {
-	return (
-		<ThemeProvider attribute="class">
-			<Web3Provider>
-				<Component {...pageProps} />
-			</Web3Provider>
-		</ThemeProvider>
-	)
+function MyApp({ Component, pageProps }) {
+    return (
+        <ThemeProvider defaultTheme="dark" enableSystem={false} attribute="class">
+            <Component {...pageProps} />
+        </ThemeProvider>
+    );
 }
 
-export default App
+export default MyApp;
+
