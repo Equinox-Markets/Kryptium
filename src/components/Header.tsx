@@ -1,12 +1,19 @@
 import React from 'react';
 import ConnectWallet from './ConnectWallet';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
     return (
         <header className="bg-white dark:bg-gray-800 py-4 shadow-md">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-center">
-                    <img src="/images/logo.png" alt="Kryptium Logo" className="inline-block mx-auto mr-2" />
+                    <Image
+                        src="/images/logo.png"
+                        alt="Kryptium Logo"
+                        width={50}
+                        height={50}
+                        className="inline-block mx-auto mr-2"
+                    />
                 </div>
                 <nav className="hidden md:flex">
                     <ul className="flex items-center space-x-8">
