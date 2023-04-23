@@ -1,6 +1,5 @@
 import React from 'react';
 import ConnectWallet from './ConnectWallet';
-import ThemeSwitcher from './ThemeSwitcher';
 
 const Header: React.FC = () => {
     return (
