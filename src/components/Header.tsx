@@ -7,7 +7,7 @@ const Header: React.FC = () => {
         <header className="bg-white dark:bg-gray-800 py-4 shadow-md">
             <div className="container mx-auto">
                 <div className="flex justify-between items-center max-w-6xl mx-auto">
-                    <div className="text-center">
+                    <div className="flex items-center">
                         <Image
                             src="/images/logo.png"
                             alt="Kryptium Logo"
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
                             </li>
                         </ul>
                     </nav>
-                    <div className="flex items-center space-x-4 absolute top-4 right-4">
+                    <div className="flex items-center space-x-4">
                         <ConnectWallet />
                     </div>
                 </div>
@@ -45,6 +45,7 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
 
 
 
