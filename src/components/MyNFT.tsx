@@ -1,12 +1,40 @@
 import React, { useState, useEffect } from 'react';
+import { ethers } from 'ethers';
+
+// Replace with the ABI of your NFT contract
+const nftContractAbi = [
+  // ...
+];
+
+// Replace with the address of your NFT contract
+const nftContractAddress = '0x...';
 
 const MyNFTs: React.FC = () => {
-  const [nfts, setNfts] = useState([]); // Replace with the appropriate data type for your NFTs
+  const [nfts, setNfts] = useState([]);
 
-  // Load NFTs from the specific collection by connecting to the user's wallet
   const loadNFTs = async () => {
-    // Implement your logic to load NFTs from the connected wallet
-    // Then update the state with the loaded NFTs
+    try {
+      // Check if the user has a connected wallet
+      if (window.ethereum) {
+        // Request access to the user's wallet
+        const [account] = await window.ethereum.request({ method: 'eth_requestAccounts' });
+
+        // Create an instance of ethers.js with the provided contract ABI and address
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const contract = new ethers.Contract(nftContractAddress, nftContractAbi, provider);
+
+        // Retrieve the user's NFTs from the contract
+        // This assumes your contract has a function `getNFTsByOwner` that takes an address as input and returns an array of NFTs
+        const ownedNFTs = await contract.getNFTsByOwner(account);
+
+        // Update the state with the loaded NFTs
+        setNfts(ownedNFTs);
+      } else {
+        console.error('No Ethereum wallet detected');
+      }
+    } catch (error) {
+      console.error('Error loading NFTs:', error);
+    }
   };
 
   useEffect(() => {
