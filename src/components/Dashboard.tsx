@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Dashboard: React.FC = () => {
     return (
@@ -25,4 +26,3 @@ const Dashboard: React.FC = () => {
 };
 
 export default Dashboard;
-
