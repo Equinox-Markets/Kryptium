@@ -1,6 +1,6 @@
 // MyNFT.tsx
 const MyNFT: React.FC = () => {
-    return <div className="MyNFT"><div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mt-6">
+    return <div className="my-nfts"><div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mt-6">
       <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">My NFTs</h2>
       <div className="flex justify-center">
         {address ? (
