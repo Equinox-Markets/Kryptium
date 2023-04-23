@@ -4,11 +4,11 @@ import Header from '@/components/Header';
 import Dashboard from '@/components/Dashboard';
 import MyNFT from '@/components/MyNFT';
 import Footer from '@/components/Footer';
-import ThemeProvider from '@/context/ThemeContext';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
 
 const Home: FC = () => {
     return (
-        <ThemeProvider>
+        <ThemeSwticher>
             <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900">
                 <Header />
                 <div className="flex-grow">
@@ -21,7 +21,7 @@ const Home: FC = () => {
                 </div>
                 <Footer />
             </div>
-        </ThemeProvider>
+        </ThemeSwitcher>
     );
 };
 
