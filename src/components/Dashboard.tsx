@@ -10,6 +10,7 @@ const Dashboard: React.FC = () => {
                     <div className="w-2/3">
                         <p className="text-left">
                             Kryptium is a decentralized financial platform that aims to create a fair, economically sustainable, and mutually beneficial ecosystem for all participants.
+                        </p>
                     </div>
                 </div>
             </div>
