@@ -1,7 +1,6 @@
 // Dashboard.tsx
 const Dashboard: React.FC = () => {   return (
     <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-      {/* NFT Showcase */}
       <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 mt-6">
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
           <div className="w-1/2 max-w-xs">
