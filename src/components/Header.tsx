@@ -30,7 +30,6 @@ const Header: React.FC = () => {
                     </ul>
                 </nav>
                 <div className="flex items-center space-x-4 absolute top-4 right-4">
-                    <ThemeSwitcher />
                     <ConnectWallet />
                 </div>
             </div>
