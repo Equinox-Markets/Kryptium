@@ -1,4 +1,4 @@
-import { createContext, FC, useState } from 'react';
+import React, { createContext, FC, useState } from 'react';
 
 interface ThemeContextValue {
     dark: boolean;
@@ -25,4 +25,5 @@ const ThemeProvider: FC = ({ children }) => {
 };
 
 export default ThemeProvider;
+
 
