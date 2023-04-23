@@ -7,7 +7,7 @@ const Dashboard: React.FC = () => {
             <div className="container mx-auto">
                 <div className="flex items-center space-x-4">
                     <Image
-                        src="/images/robot.png"
+                        src="/images/logo2.png"
                         alt="Kryptium Logo"
                         width={500}
                         height={500}
