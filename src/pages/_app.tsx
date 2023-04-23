@@ -1,5 +1,6 @@
-import { ThemeProvider } from 'next-themes';
-import '../styles/globals.css';
+import 'tailwindcss/tailwind.css'
+import { ThemeProvider } from 'next-themes'
+import Web3Provider from '@/components/Web3Provider'
 
 function MyApp({ Component, pageProps }) {
     return (
