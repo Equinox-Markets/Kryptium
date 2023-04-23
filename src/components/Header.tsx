@@ -14,9 +14,10 @@ const Header: React.FC = () => {
                     <ul className="flex items-center space-x-12">
                         <li className="text-gray-800 dark:text-gray-200 font-semibold">Dashboard</li>
                         <li className="text-gray-800 dark:text-gray-200 font-semibold">My NFTs</li>
+                        <li className="text-gray-800 dark:text-gray-200 font-semibold">Docs</li>
                     </ul>
                 </nav>
-                <div className="flex items-center space-x-6 absolute top-4 right-4">
+                <div className="flex items-center space-x-6 absolute top-5 right-5">
                     <ThemeSwitcher />
                     <ConnectWallet />
                 </div>
