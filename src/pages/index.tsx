@@ -18,7 +18,7 @@ const Home: FC = () => {
             <div className="flex-grow">
                 <div className="max-w-6xl mx-auto sm:px-6 lg:px-8 py-8">
                     <div className="grid grid-cols-1 gap-8">
-                        <Dashboard handleMintNow={handleMintNow} />
+                        <Dashboard />
                         <MyNFT />
                     </div>
                 </div>
