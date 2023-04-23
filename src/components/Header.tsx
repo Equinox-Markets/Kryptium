@@ -16,7 +16,7 @@ const Header: React.FC = () => {
                         <li className="text-gray-800 dark:text-gray-200 font-semibold">My NFTs</li>
                     </ul>
                 </nav>
-                <div className="flex items-center space-x-4 absolute top-4 right-4">
+                <div className="flex items-center space-x-6 absolute top-4 right-4">
                     <ThemeSwitcher />
                     <ConnectWallet />
                 </div>
@@ -26,6 +26,7 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
 
 
 
